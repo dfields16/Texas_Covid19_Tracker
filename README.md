@@ -2,6 +2,8 @@
 #### Author: Dawson Fields
 ---
 
+![Latest](tracking/latest.svg)
+
 ## Description:
 A python project to track all known cases of Covid-19 (Coronavirus) in Texas by county.
 
@@ -11,5 +13,3 @@ A python project to track all known cases of Covid-19 (Coronavirus) in Texas by 
 
 ## Data Sources:
 - [https://dshs.texas.gov/news/updates.shtm#coronavirus](https://dshs.texas.gov/news/updates.shtm#coronavirus)
-
-![Latest](tracking/latest.svg)
