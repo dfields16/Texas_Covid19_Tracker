@@ -132,4 +132,4 @@ dmypy.json
 **.idea
 *.csv
 *.html
-!docs/latest.html
+!docs/index.html
