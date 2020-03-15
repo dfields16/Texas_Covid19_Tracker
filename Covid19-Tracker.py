@@ -65,5 +65,6 @@ def main():
 	output = "tracking/" + str(date.today().strftime("%d-%m-%Y")) +".html"
 	print("Writing to file: " + output)
 	figure.write_html(output)
+	figure.write_html("tracking/latest.html")
 
 main()

@@ -131,3 +131,5 @@ dmypy.json
 **.vscode
 **.idea
 *.csv
+*.html
+!tracking/latest.html
