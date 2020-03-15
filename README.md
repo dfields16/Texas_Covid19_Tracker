@@ -13,3 +13,9 @@ A python project to track all known cases of Covid-19 (Coronavirus) in Texas by 
 
 ## Data Sources:
 - [https://dshs.texas.gov/news/updates.shtm#coronavirus](https://dshs.texas.gov/news/updates.shtm#coronavirus)
+
+## Resources:
+- [Plotly](https://plot.ly/)
+- [Plotly Choropleth Maps](https://plot.ly/python/choropleth-maps/)
+- [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)
+- [Pandas](https://pandas.pydata.org/)
