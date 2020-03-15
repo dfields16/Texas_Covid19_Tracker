@@ -66,7 +66,7 @@ def main():
 	output = "tracking/" + str(date.today().strftime("%d-%m-%Y")) +".html"
 	print("Writing to file: " + output)
 	figure.write_html(output)
-	figure.write_html("tracking/latest.html")
+	figure.write_html("docs/latest.html")
 
 	figure.write_json("out.json")
 	os.system("orca graph out.json -o tracking/latest.svg --format svg --height 512 --width 1024")
