@@ -69,7 +69,7 @@ def main():
 	figure.write_html("tracking/latest.html")
 
 	figure.write_json("out.json")
-	os.system("orca graph out.json -o tracking/latest.png --height 512 --width 1024")
+	os.system("orca graph out.json -o tracking/latest.svg --format svg --height 512 --width 1024")
 	os.remove("out.json")
 
 main()
