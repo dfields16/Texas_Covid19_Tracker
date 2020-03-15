@@ -11,3 +11,5 @@ A python project to track all known cases of Covid-19 (Coronavirus) in Texas by 
 
 ## Data Sources:
 - [https://dshs.texas.gov/news/updates.shtm#coronavirus](https://dshs.texas.gov/news/updates.shtm#coronavirus)
+
+![Latest](tracking/latest.png)

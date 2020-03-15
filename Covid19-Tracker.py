@@ -5,6 +5,7 @@ import pandas as pd
 import plotly.express as px
 import json
 
+import os
 from datetime import date
 
 def prepareData(url, geoJson):
@@ -66,5 +67,9 @@ def main():
 	print("Writing to file: " + output)
 	figure.write_html(output)
 	figure.write_html("tracking/latest.html")
+
+	figure.write_json("out.json")
+	os.system("orca graph out.json -o tracking/latest.png --height 1024 --width 1024")
+	os.remove("out.json")
 
 main()
