@@ -13,7 +13,7 @@ def prepareData(url, geoJson):
 
 	page = requests.get(url, verify=False)
 	html = BeautifulSoup(page.content, 'html.parser')
-	table = html.find(summary="Texas COVID-19 Cases")
+	table = html.find(summary="COVID-19 Cases in Texas Counties")
 
 	data = []
 	rows = table.find_all("tr")
