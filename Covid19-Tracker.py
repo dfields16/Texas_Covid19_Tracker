@@ -25,7 +25,7 @@ def prepareData(url, geoJson):
 	for county in geoJson["features"]:
 		counties[county["properties"]["NAME"]] = county["id"]
 
-	for row in rows:
+	for row in rows[:-1]:
 		cols = row.find_all('td')
 		cols = [ele.text.strip() for ele in cols]
 		if len(cols) != 0:
