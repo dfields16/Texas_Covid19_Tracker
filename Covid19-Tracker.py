@@ -18,7 +18,9 @@ def prepareData(url, geoJson):
 	data = []
 	rows = table.find_all("tr")
 	dataFile = open("texas_covid_19.csv", "w")
-	dataFile.write("fips,County,Cases")
+	trackingFile = open("tracking/" + str(date.today().strftime("%d-%m-%Y")) +".csv", "w")
+	dataFile.write("fips,County,Cases,Deaths")
+	trackingFile.write("fips,County,Cases,Deaths")
 
 	counties = dict()
 
@@ -33,7 +35,8 @@ def prepareData(url, geoJson):
 			cols[1] = int(cols[1])
 			if cols[0] != "Total":
 				data.append([ele for ele in cols if ele])
-				dataFile.write("\n" + counties[cols[0]] + "," + cols[0] + "," + str(cols[1]))
+				dataFile.write("\n" + counties[cols[0]] + "," + cols[0] + "," + str(cols[1]) + "," + str(cols[2]))
+				trackingFile.write("\n" + counties[cols[0]] + "," + cols[0] + "," + str(cols[1]) + "," + str(cols[2]))
 
 	for county in counties:
 		if not any(county in i for i in data):
